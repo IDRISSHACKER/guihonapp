@@ -1,7 +1,7 @@
 .btn{
     border: none;
     padding: 15px 25px;
-    font-weight: 700;
+    font-weight: 500;
     white-space: initial;
     border-radius: 50px;
     letter-spacing: none;
@@ -9,6 +9,7 @@
     border: solid 1px $secondary;
     user-select: none;
     font-size: 18px;
+    font-size: clamp(16px, 2vw, 18px)
 }
 
 .btn-secondary{
@@ -42,3 +43,4 @@
     justify-content: center;
     gap: 20px;
 }
+

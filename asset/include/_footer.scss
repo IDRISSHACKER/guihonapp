@@ -9,14 +9,45 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        flex-direction: column;
+        gap: 50px;
+
+        .footer-header{
+           h4{
+                font-weight: 800;
+                line-height: 95%;
+                text-transform: uppercase;
+                text-rendering: geometricprecision;
+                font-size: 32px;
+                color: lighten($color: $primary, $amount: 20) !important;
+           }
+        }
+
+        .footer-link{
+            display: flex;
+            align-items: center !important;
+            justify-content: space-around !important;   
+            flex-direction: row;
+        }
+
+        .footer-footer{
+            border-top: solid 1px lighten($color: $primary, $amount: 10);
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: row;
+            padding-top: 20px;
+        }
         div{
+            width: 100%;
             img{
-                width: 80px;
+                width: 50px;
                 height: auto;
             }
             h5{
-                color: lighten($color: $primary, $amount: 15);
-                font-size: 25px;
+                color: lighten($color: $primary, $amount: 20);
+                font-size: 20px;
+                font-size: clamp(14px,5vw,20px);
             }
             a{
                 transition: all linear 300ms;
@@ -25,11 +56,44 @@
                     color: inherit;
                 }
             }
+
+            .btn{
+                font-size: 13px;
+                text-decoration: none;
+                padding: 10px 15px;
+                &:hover{
+                    text-decoration: none !important;
+                }
+            }
+
+            .btn-secondary{
+                background: lighten($color: $primary, $amount: 30) !important;
+                color: $black;
+
+                &:hover{
+                    background: white !important;
+                    color: $black !important;
+                }
+            }
             display: flex;
-            align-items:flex-start;
+            align-items:center;
             justify-content: center;
             flex-direction: column;
             gap: 15px;
         }
+    }
+}
+
+@media only screen and (max-width: $mobileSize){
+    .footer-link{
+        div{
+            align-items: flex-start !important;
+            justify-content: start !important;
+        }
+    }
+
+    .footer-footer{
+        justify-content: space-around !important;
+        align-items: flex-end;
     }
 }

@@ -26,3 +26,18 @@
 .bg-white{
     background: #fff;
 }
+
+.showMobile{
+    display: none;
+}
+
+@media only screen and (max-width: $mobileSize){
+    .hideMobile{
+        display: none;
+    }
+
+    .showMobile{
+        display: block;
+    }
+}
+

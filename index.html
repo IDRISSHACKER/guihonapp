@@ -12,6 +12,7 @@
     <meta name="description" content="guihon est une  plateforme dont la mission principale est de favoriser l'incersion socio-professionnelle des jeunes">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="./asset/app.js" defer></script>
 </head>
 <body>
     <div class="navbar">
@@ -22,54 +23,73 @@
                         <img src="./iconeTypo.png" class="icon" alt="guihon icon">
                     </a>
                 </div>
-                <div class="parts">
-                    <a class="part-link" href="#">A propos</a>
-                    <a class="part-link" href="#">Nos services</a>
-                    <a class="part-link" href="#">Nous contacter</a>
-                    <a href="https://floralux.guihon.cm" class="btn btn-secondary">Floralux</a>
+                <div class="showMobile activeMenu">
+                    <a href="#">
+                        <img src="./asset/media/menu.svg" class="moreMenuIcon" alt="show menu">
+                    </a>
+                </div>
+                <div class="menu">
+                    <div class="menu-header">
+                        <div class="menuLogo">
+                            <img src="./icone.png" class="closeMenuIcon showMobile" alt="close menu">
+                        </div>
+                        <div class="closeMenu showMobile">
+                            <a href="#">
+                                <img src="./asset/media/close.svg" class="closeMenuIcon" alt="close menu">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="menu-content">
+                        <a class="menu-link" href="#propos">A propos</a>
+                        <a class="menu-link" href="#services">Nos services</a>
+                        <a class="menu-link" href="#contacts">Nous contacter</a>
+                    </div>
+                    <div class="menu-footer">
+                        <a href="https://floralux.guihon.cm" class="btn btn-secondary">Floralux</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="presentation">
        <div class="container">
-            <div class="presentation-content">
+            <div class="presentation-content box">
                 <div class="desc">
-                    <h1 class="title"><span class="primary">CONTRUIT</span> TON AVENIR...</h1>
-                    <p class="text desc-content styled">
+                    <h1 class="title"><span class="primary">CONSTRUIR</span> MON AVENIR...</h1>
+                    <p class="text desc-content styled" id="propos">
                         Promotion de l'entreprenariat, de l'agriculture, du benevolat, orientation, formation et insertion des jeunes dans le monde socio-professionnel. 
                     </p>
-                    <div class="buttons mt-10">
+                    <div class="buttons">
                         <a href="https://floralux.guihon.cm" class="btn btn-secondary">Consulter nos articles</a>
-                        <a href="" class="btn btn-outlined-secondary ">Devenir partenaire</a>
+                        <a href="" class="btn btn-outlined-secondary hideMobile">Devenir partenaire</a>
                     </div>
                 </div>
                 <div class="media">
-                    <video src="./asset/media/illustration-home-hero-header-2.mp4"  autoplay="" loop="" muted="" height="450" width="100%" ></video>
+                    <video class="videoStyled" src="./asset/media/illustration-home-hero-header-2.mp4"  autoplay="" loop="" muted="" height="100%" width="100%" ></video>
                 </div>
             </div>
        </div>
     </div>
-    <div class="box"></div>
     <div class="section bg-white">
         <div class="container">
             <div class="section-content box">
                 <img src="./asset/media/1.svg" alt="">
                 <div class="content">
-                    <h2 class="title2">Prendre son envolle et demarrer son business grâce à guihon</h2>
-                    <p class="text">Grâce à des formations certifiérs guihon & gratuites, vous avez la possibilitée de developper votre propre business & d'avoir une situation financiaire fiable.</p>
+                    <h2 class="title2">Demarrer son bussiness & prendre son envolle grâce à guihon academy</h2>
+                    <p class="text">Grâce à des formations certifiérs guihon, vous avez la possibilitée de developper votre propre business & d'evoluer dans votre carrière profesionnelle.</p>
                 </div>
             </div>
         </div>
     </div>
-        <div class="section">
+        <div class="section" id="services">
             <div class="container">
                 <div class="section-content box">
+                    <img src="./asset/media/2.svg" class="showMobile" alt="">
                     <div class="content">
-                        <h2 class="title2">Devenir partenaire guihon, ventre les articles et toucher une remuneration</h2>
-                        <p class="text">Grâce au service floralux de guihon, vous avez la possibilitée de devenir partenaire guihon, ventre des produits guihon grâce aux reseaus sociaux et toucher une remuneartion.</p>
+                        <h2 class="title2">Devenir partenaire guihon & representer nos marques de produits et services</h2>
+                        <p class="text">Grâce au service floralux de guihon, vous avez la possibilitée de devenir partenaire guihon, ventre des produits guihon grâce aux reseaus sociaux contre une remuneartion.</p>
                     </div>
-                    <img src="./asset/media/2.svg" alt="">
+                    <img src="./asset/media/2.svg" class="hideMobile" alt="">
                 </div>
             </div>
         </div>
@@ -77,7 +97,7 @@
             <div class="container">
                 <div class="section-content bannered box">
                     <div class="content">
-                        <h2 class="title2-custom center">UNE APPLICATION FIABLE POUR L'ACHAT <br /> DES ARTICLES GUIHON</h2>
+                        <h2 class="title2-custom center">UNE APPLICATION FIABLE & SECURISER POUR L'ACHAT <br /> DES  PRODUITS ET SERVICES GUIHON</h2>
                         <p class="text center">Grâce à floralux, les achats se fonts casit intantannement. Achetez vos articles ou commander un service & faite vous livrer à domicile. Si le produit ou le service commander ne vous satisfait pas à 100%, vous êtes immédiatement rembourser dans les 24h précedents votre achat.</p>
                     </div>
                     <img src="./asset/media/3.svg" alt="">
@@ -100,21 +120,27 @@
         <footer class="footer">
             <div class="container">
                 <div class="footer-content box">
-                    <div>
-                        <img src="./icone.png" alt="">
+                    <div class="footer-header">
+                        <h4 class="primary">CONSTRUIR MON AVENIR</h4>
                     </div>
-                    <div class="">
-                        <h5 class="title4">Guihon</h5>
-                        <a href="#">A propos</a>
-                        <a href="#">Nos services</a>
-                        <a href="#">Nous contacter</a>
-                    </div>
-                    <div class="">
-                            <h5 class="title4">Suivez-nous</h5>
-                            <a href="#">Facebook</a>
-                            <a href="#">Twitter</a>
-                            <a href="#">Instagram</a>
+                    <div class="footer-link">
+                        <div class="">
+                            <h5 class="title4">Guihon</h5>
+                            <a href="#">A propos</a>
+                            <a href="#">Nos services</a>
+                            <a href="#">Nous contacter</a>
                         </div>
+                        <div class="" id="contacts">
+                            <h5 class="title4">Suivez-nous</h5>
+                            <a href="https://web.facebook.com/people/GuihonGroupe-SARL/">Facebook</a>
+                            <a href="https://twiter.com/guihon">Twitter</a>
+                            <a href="https://instagram.com/guihon">Instagram</a>
+                        </div>
+                    </div>
+                    <div class="footer-footer">
+                        <img src="./icone.png" alt="">
+                        <a href="https://floralux.guihon.cm" class="btn btn-secondary">Floralux</a>
+                    </div>
                 </div>
             </div>
         </footer>
