@@ -10,7 +10,7 @@ window.onload = ()=>{
     })
 
     CLOSE_MENU.addEventListener('click', (e) => {
-        MENU.classList.toggle('menuVisible')
+        MENU.classList.remove('menuVisible')
     })
 
     LINKS.forEach(link => {
