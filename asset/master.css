@@ -1,103 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: guihonFont;
-  src: url("font/Montserrat-Regular.ttf");
-}
-@font-face {
-  font-family: guihonFont;
-  src: url("font/Montserrat-Black.ttf");
-  font-weight: 900;
-  font-style: normal;
-}
-@font-face {
-  font-family: guihonFont;
-  src: url("font/Montserrat-BlackItalic.ttf");
-}
-@font-face {
-  font-family: guihonFont;
-  src: url("font/Montserrat-Bold.ttf");
-  font-weight: 800;
-  font-style: normal;
-}
-@font-face {
-  font-family: guihonFont;
-  src: url("font/Montserrat-BoldItalic.ttf");
-  font-weight: 800;
-  font-style: normal;
-}
-@font-face {
-  font-family: guihonFont;
-  src: url("font/Montserrat-ExtraLight.ttf");
-}
-@font-face {
-  font-family: guihonFont;
-  src: url("font/Montserrat-ExtraLightItalic.ttf");
-}
-@font-face {
-  font-family: guihonFont;
-  src: url("font/Montserrat-Italic.ttf");
-}
-@font-face {
-  font-family: guihonFont;
-  src: url("font/Montserrat-Light.ttf");
-}
-@font-face {
-  font-family: guihonFont;
-  src: url("font/Montserrat-LightItalic.ttf");
-  font-weight: 300;
-  font-style: italic;
-}
-@font-face {
-  font-family: guihonFont;
-  src: url("font/Montserrat-Medium.ttf");
-  font-weight: 300;
-}
-@font-face {
-  font-family: guihonFont;
-  src: url("font/Montserrat-MediumItalic.ttf");
-  font-weight: 300;
-  font-style: italic;
-}
-@font-face {
-  font-family: guihonFont;
-  src: url("font/Montserrat-SemiBoldItalic.ttf");
-  font-style: italic;
-}
-@font-face {
-  font-family: guihonFont;
-  src: url("font/Montserrat-Thin.ttf");
-  font-weight: 100;
-}
-@font-face {
-  font-family: guihonFont;
-  src: url("font/Montserrat-ThinItalic.ttf");
-  font-weight: 100;
-  font-style: italic;
-}
 html {
   background: #f0f3f5;
-  font-family: guihonFont;
+  font-family: "Montserrat";
 }
 
-h1 {
-  font-weight: 900;
+a {
+  text-decoration: none;
+  color: #062410;
+  transition: all linear 300ms;
+}
+a:hover {
+  color: #10662e;
 }
 
-h2 {
-  font-weight: 800;
+.icon {
+  width: auto;
+  height: 50px;
 }
 
-h3 {
+.navbar {
+  background: #fff;
+}
+.navbar .navbar-content {
+  padding: 17px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .navbar-content .parts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.navbar .navbar-content .parts .part-link {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.btn {
+  border: none;
+  padding: 15px 25px;
   font-weight: 700;
+  white-space: initial;
+  border-radius: 50px;
+  letter-spacing: none;
+  transition: all linear 300ms;
+  border: solid 1px #10662e;
+  user-select: none;
+  font-size: 18px;
 }
 
-h4 {
+.btn-secondary {
+  background: #10662e;
+  color: #fff;
+}
+.btn-secondary:hover {
+  color: white;
+  background: #0d5024;
+  border-color: #0d5024;
+}
+
+.btn-outlined-secondary {
+  background: #fff;
+  color: #10662e;
+  border-color: #10662e;
+}
+.btn-outlined-secondary:hover {
+  color: #fff;
+  border-color: #0d5024;
+  background: #0d5024;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.presentation .presentation-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 0px 0px 0px;
+}
+.presentation .presentation-content .desc {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 35px;
+  max-width: 40%;
+}
+.presentation .presentation-content .desc .desc-content {
+  font-weight: normal;
+}
+
+.section .section-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.section .section-content .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 40%;
+}
+.section .section-content img {
+  max-width: 65%;
+}
+.section .bannered {
+  flex-direction: column;
+}
+.section .bannered .content {
+  max-width: 100%;
+}
+
+.getstarted .getstarted-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title {
+  color: #020e06;
+  word-wrap: break-word;
+  line-height: 70px;
+  font-weight: 800;
+  font-size: 64px;
+  font-size: clamp(24px, 5vw, 74px);
+  line-height: 95%;
+  text-transform: uppercase;
+  text-rendering: geometricPrecision;
+}
+
+.title2 {
+  color: #020e06;
+  word-wrap: break-word;
+  line-height: 70px;
+  font-weight: 700;
+  font-size: 44px;
+  font-size: clamp(24px, 5vw, 44px);
+  line-height: 95%;
+  text-rendering: geometricPrecision;
+  line-height: 120%;
+}
+
+.title2-custom {
+  color: #020e06;
+  word-wrap: break-word;
+  line-height: 70px;
+  font-weight: 800;
+  font-size: 44px;
+  font-size: clamp(24px, 5vw, 44px);
+  line-height: 95%;
+  text-transform: uppercase;
+  text-rendering: geometricPrecision;
+  line-height: 120%;
+}
+
+.title4 {
+  color: #020e06;
+  word-wrap: break-word;
+  line-height: 70px;
   font-weight: 600;
+  font-size: 44px;
+  font-size: clamp(24px, 5vw, 32px);
+  line-height: 120%;
+  text-rendering: geometricPrecision;
+  line-height: 120%;
+}
+
+.text {
+  font-size: 22px;
+  line-height: 1.6;
+}
+
+.center {
+  text-align: center;
+}
+
+.container {
+  max-width: 1330px;
+  margin: auto;
+}
+
+.mt-10 {
+  margin-top: 30px !important;
+}
+
+.styled {
+  display: block;
+  position: relative;
+}
+.styled::after {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 50px;
+  background: url("/asset/media/vector.svg") no-repeat;
+  background-position: bottom;
+  position: absolute;
+  bottom: -22px;
+  right: -3px;
+}
+
+.box {
+  width: 100%;
+  padding: 70px 0px 70px 0px;
+}
+
+.bg-white {
+  background: #fff;
+}
+
+.primary {
+  color: #093a1a;
+}
+
+.footer {
+  background: #23272a;
+}
+.footer * {
+  color: #fff;
+}
+.footer .footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer .footer-content div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer .footer-content div img {
+  width: 80px;
+  height: auto;
+}
+.footer .footer-content div h5 {
+  color: #1aa84c;
+  font-size: 25px;
+}
+.footer .footer-content div a {
+  transition: all linear 300ms;
+}
+.footer .footer-content div a:hover {
+  text-decoration: underline;
+  color: inherit;
 }
 
 /*# sourceMappingURL=master.css.map */

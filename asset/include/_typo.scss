@@ -1,0 +1,58 @@
+.title{
+    color: darken($color: $primary, $amount: 20);
+    word-wrap: break-word;
+    line-height: 70px;
+    font-weight: 800;
+    font-size: 64px;
+    font-size: clamp(24px,5vw,74px);
+    line-height: 95%;
+    text-transform: uppercase;
+    text-rendering: geometricPrecision;
+}
+
+.title2{
+    color: darken($color: $primary, $amount: 20);
+    word-wrap: break-word;
+    line-height: 70px;
+    font-weight: 700;
+    font-size: 44px;
+    font-size: clamp(24px,5vw,44px);
+    line-height: 95%;
+    //text-transform: uppercase;
+    text-rendering: geometricPrecision;
+    line-height: 120%;
+}
+
+.title2-custom{
+    color: darken($color: $primary, $amount: 20);
+    word-wrap: break-word;
+    line-height: 70px;
+    font-weight: 800;
+    font-size: 44px;
+    font-size: clamp(24px,5vw,44px);
+    line-height: 95%;
+    text-transform: uppercase;
+    text-rendering: geometricPrecision;
+    line-height: 120%;
+}
+
+.title4{
+    color: darken($color: $primary, $amount: 20);
+    word-wrap: break-word;
+    line-height: 70px;
+    font-weight: 600;
+    font-size: 44px;
+    font-size: clamp(24px,5vw,32px);
+    line-height: 120%;
+    text-rendering: geometricPrecision;
+    line-height: 120%;
+}
+
+.text{
+    font-size: 22px;
+    line-height: 1.6;
+}
+
+.center{
+    text-align: center;
+}

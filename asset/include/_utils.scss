@@ -1,0 +1,28 @@
+.mt-10{
+    margin-top: 30px !important;
+}
+
+.styled{
+    display: block;
+    position: relative;
+    &::after{
+        content: "";
+        display: block;
+        width: 200px;
+        height: 50px;
+        background: url("/asset/media/vector.svg") no-repeat;
+        background-position: bottom;
+        position: absolute;
+        bottom: -22px;
+        right: -3px;
+    }
+}
+
+.box{
+    width: 100%;
+    padding: 70px 0px 70px 0px;
+}
+
+.bg-white{
+    background: #fff;
+}

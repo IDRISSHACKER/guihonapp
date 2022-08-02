@@ -1,0 +1,23 @@
+.navbar{
+    background: #fff;
+    
+    .navbar-content{
+        padding: 17px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .parts{
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+
+            .part-link{
+                font-weight: bold;
+                font-size: 20px;
+            }
+        }
+    }
+}

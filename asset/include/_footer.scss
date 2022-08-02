@@ -1,0 +1,35 @@
+.footer{
+    background: $black;
+
+    *{
+        color: #fff;
+    }
+
+    .footer-content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        div{
+            img{
+                width: 80px;
+                height: auto;
+            }
+            h5{
+                color: lighten($color: $primary, $amount: 15);
+                font-size: 25px;
+            }
+            a{
+                transition: all linear 300ms;
+                &:hover{
+                    text-decoration: underline;
+                    color: inherit;
+                }
+            }
+            display: flex;
+            align-items:flex-start;
+            justify-content: center;
+            flex-direction: column;
+            gap: 15px;
+        }
+    }
+}

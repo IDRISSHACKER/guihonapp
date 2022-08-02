@@ -1,0 +1,44 @@
+.btn{
+    border: none;
+    padding: 15px 25px;
+    font-weight: 700;
+    white-space: initial;
+    border-radius: 50px;
+    letter-spacing: none;
+    transition: all linear 300ms;
+    border: solid 1px $secondary;
+    user-select: none;
+    font-size: 18px;
+}
+
+.btn-secondary{
+    background: $secondary;
+    color: #fff;
+
+    &:hover{
+        color: white;
+        background: darken($color: $secondary, $amount: 5);
+        border-color: darken($color: $secondary, $amount: 5);
+    }
+
+}
+
+.btn-outlined-secondary{
+    background: #fff;
+    color: $secondary;
+    border-color: $secondary;
+
+    &:hover{
+        color: #fff;
+        border-color: darken($color: $secondary, $amount: 5);
+        background: darken($color: $secondary, $amount: 5);
+    }
+
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}

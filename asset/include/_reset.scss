@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background: #f0f3f5;
+    font-family: 'Montserrat';
+}
+
+a{
+    text-decoration: none;
+    color: darken($color: $primary, $amount: 15);
+    transition: all linear 300ms;
+
+    &:hover{
+        color: $primary;
+    }
+}
+
+
+.icon{
+    width: auto;
+    height: 50px;
+}
