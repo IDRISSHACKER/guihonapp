@@ -1,6 +1,6 @@
 .btn{
     border: none;
-    padding: 15px 25px;
+    padding: 13px 25px;
     font-weight: 500;
     white-space: initial;
     border-radius: 50px;
@@ -8,8 +8,20 @@
     transition: all linear 300ms;
     border: solid 1px $secondary;
     user-select: none;
-    font-size: 18px;
+    font-size: 15px !important;
     font-size: clamp(16px, 2vw, 18px)
+}
+
+.btn-primary{
+    background: $white;
+    color: #2A2A2A;
+    border: none;
+
+    &:hover{
+        color: $blue;
+        background: $white;
+        border: none;
+    } 
 }
 
 .btn-secondary{
